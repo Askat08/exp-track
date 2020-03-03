@@ -4,22 +4,22 @@ import { Link } from "react-router-dom";
 
 const style = {
   header: {
-    position: "fixed",
+    position: "absolute",
     top: 0,
     right: 0,
     width: "100%",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    overflow: "hidden",
-    background: "darkcyan"
-    // background: "rgba(125, 125, 125, 0.7)"
+    height: "7rem",
+    background: "rgba(0, 55, 55, 0.7)"
   },
   a: {
+    fontFamily: "Comic Sans MS",
     textDecoration: "none",
-    marginRight: "1rem",
+    marginRight: "3rem",
     fontSize: "2rem",
-    color: "black"
+    color: "white"
   }
 };
 
@@ -27,10 +27,14 @@ export const Header = () => {
   return (
     <div style={style.header} className="mobile">
       <Link to="/">
-        <img src={logo} style={{ width: "7rem" }} alt="logo" />
+        <img
+          src={logo}
+          style={{ width: "7rem", marginLeft: "1rem" }}
+          alt="logo"
+        />
       </Link>
       <Link to="/wallet" style={style.a}>
-        Wallet
+        wallet
       </Link>
     </div>
   );

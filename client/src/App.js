@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
+import "./styles/App.css";
 import Banner from "./components/Banner";
 import { Header } from "./components/Header";
 import { Balance } from "./components/Balance";

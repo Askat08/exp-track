@@ -1,6 +1,8 @@
 import React from "react";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import MediaQuery from "react-responsive";
 
-import "../Banner.css";
+import "../styles/Banner.css";
 
 const Banner = () => {
   return (
@@ -29,10 +31,11 @@ const Banner = () => {
         </div>
         <div className="text quote">
           <p>
-            <q>
+            <FaQuoteLeft />
+            <em>
               Beware of little expenses. A small leak will sink a great ship
-            </q>{" "}
-            ~ Benjamin Franklin
+            </em>
+            <FaQuoteRight /> ~ Benjamin Franklin
           </p>
         </div>
       </div>
